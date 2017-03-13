@@ -1,4 +1,19 @@
-<h1>
-  {{title}}
-</h1>
-<router-outlet></router-outlet>
+
+<div class="header">
+  <div class="header__logo">
+    <a routerLink="/" routerLinkActive="active"><span class="header__logo-text--green">Yue</span><span class="header__logo-text--white">Project</span></a>
+  </div>
+  <div class="navigation">
+    <a class="navigation__item" routerLink="/" routerLinkActive="active">Home page</a>
+    <a class="navigation__item" routerLink="/to-do-list" routerLinkActive="active">To do list</a>
+    <a class="navigation__item" routerLink="/blog" routerLinkActive="active">Blog</a>
+
+  </div>
+
+</div>
+
+<div class="content">
+  <router-outlet></router-outlet>
+
+</div>
+

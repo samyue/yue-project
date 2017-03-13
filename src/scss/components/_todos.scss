@@ -1,0 +1,25 @@
+.todos {
+  display: table;
+  width: 100%;
+  border: 1px solid lightgray;
+
+}
+
+.todos__header {
+  display: table-row;
+  border-bottom: 1px solid lightgray;
+  background-color: #F0F0F0;
+}
+
+.todos__header-description, .todos__header-status, .todos__header-actions {
+  display: table-cell;
+  border-bottom: 1px solid lightgray;
+}
+
+.todos__row {
+  display: table-row;
+}
+
+.todos__row-description, .todos__row-status, .todos__row-actions {
+  display: table-cell;
+}
