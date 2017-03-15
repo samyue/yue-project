@@ -5,22 +5,22 @@ import { HttpModule } from '@angular/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ToDoListComponent } from './to-do-list/to-do-list.component';
-import { HomeComponent } from './home/home.component';
-import { BlogComponent } from './blog/blog.component';
+import {ToDoListModule} from './to-do-list/to-do-list.module';
+import { HomeModule } from './home/home.module';
+import { BlogModule } from './blog/blog.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    ToDoListComponent,
-    HomeComponent,
-    BlogComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ToDoListModule,
+    HomeModule,
+    BlogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

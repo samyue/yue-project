@@ -13,6 +13,6 @@
   padding: 0 40px;
 }
 
-.navigation__item:hover, .navigation__item:active, .navigation__item--selected {
+.navigation__item:hover, .navigation__item:active, .navigation__item:focus, .navigation__item--selected {
   color: #DDD;
 }
