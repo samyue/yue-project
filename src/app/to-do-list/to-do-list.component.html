@@ -13,14 +13,15 @@
       Actions
     </div>
   </div>
-  <div class="todos__row">
-    <div class="todos__row-description">&nbsp;</div>
-    <div class="todos__row-status">&nbsp;</div>
-    <div class="todos__row-actions">&nbsp;</div>
+  <div *ngFor="let todo of toDoList" class="todos__row">
+    <div class="todos__row-description">{{todo.description}}</div>
+    <div class="todos__row-status">{{todo.status}}</div>
+    <div class="todos__row-actions"><a (click)="markDone(todo)">Mark done</a>&nbsp;&nbsp;<a (click)="delete(todo)" >Delete</a></div>
   </div>
 
 </div>
 
 <div class="page-buttons-block">
-  <button class="button--primary">Add new todo</button>
+  <input type="text" #input>
+  <button class="button--primary" (click)="addToDo(input.value)" >Add new todo</button>
 </div>
